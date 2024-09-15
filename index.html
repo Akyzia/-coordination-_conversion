@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Conversão de Coordenadas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.2/proj4.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+<body>
+    <h1>Conversão de Coordenadas</h1>
+
+    <h2>Graus Decimais para UTM</h2>
+    <label for="latitude">Latitude:</label>
+    <input type="number" id="latitude" step="any">
+    <br><br>
+    <label for="longitude">Longitude:</label>
+    <input type="number" id="longitude" step="any">
+    <br><br>
+    <button onclick="convertCoordinatesToUTM()">Converter para UTM</button>
+    <br><br>
+    <p id="utmConversionResult"></p>
+
+    <h2>UTM para Graus Decimais</h2>
+    <label for="utmEasting">UTM E:</label>
+    <input type="number" id="utmEasting" step="any">
+    <br><br>
+    <label for="utmNorthing">UTM N:</label>
+    <input type="number" id="utmNorthing" step="any">
+    <br><br>
+    <button onclick="convertCoordinatesToDegrees()">Converter para Graus Decimais</button>
+    <br><br>
+    <p id="degreesConversionResult"></p>
+
+    <!-- Script JavaScript -->
+    <script src="javascript/convcoordjavas.js"></script>
+    
+</body>
+</html>
